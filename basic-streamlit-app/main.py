@@ -17,5 +17,5 @@ bodymass = st.slider("Choose a maximum body mass",
           min_value = df['body_mass_g'].min(),
           max_value = df['body_mass_g'].max())
 
-st.write(f'Salaries under {bodymass}')
+st.write(f'Penguins with body mass under {bodymass}')
 st.dataframe(df[df['body_mass_g'] <= bodymass])
