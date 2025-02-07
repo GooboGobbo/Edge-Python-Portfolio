@@ -1,2 +1,4 @@
-# This is a test readme for my basic streamlit app
-# use README.md in a new file name to get the readme file
+# An interactive page where you can examine data on Palmer's Penguins!
+
+Code to run the app:
+streamlit run basic-streamlit-app/main.py
