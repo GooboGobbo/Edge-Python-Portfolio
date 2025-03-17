@@ -20,3 +20,12 @@ Clone this repository and navigate to the project folder. Then, run the followin
 ```sh
 streamlit run penguins_app.py
 ```
+## 📊 Dataset Description  
+**Dataset:** `penguins.csv`
+
+The dataset includes the following attributes for each penguin:
+- **Species** (Adelie, Chinstrap, or Gentoo)
+- **Island** where the penguin was observed
+- **Body mass** (grams)
+- **Bill length & depth**
+- **Flipper length**
