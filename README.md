@@ -1,30 +1,52 @@
-# 👨‍💻 My Coding Portfolio  
+# 🐍 Python Projects Portfolio
 
-Welcome to my portfolio! Here, you'll find a selection of projects that showcase my skills in coding and data analysis. I’m passionate about turning raw data into meaningful insights and creating interactive applications. Below are my key projects.
-
----
-
-## 📌 Purpose  
-This repository is for the posting of my Python coding projects.
+Welcome to my Python projects repository! Here, I showcase interactive applications and data analysis projects built using **Streamlit**, **Pandas**, and other tools. My goal is to turn raw data into meaningful insights while improving my coding skills.
 
 ---
 
-## 📂 Plan for Organization  
-I plan to use folders that are appropriately named and organized as well as visuals and models that are clean and relevant to my material.
+## 📌 Project List
+
+### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/TidyData-Project)
+This project focuses on **cleaning and visualizing** the 2008 Olympic medalist dataset using **tidy data principles**.  
+Key features:
+- Used **Pandas `melt()`** to restructure the dataset.
+- Extracted gender and event details from messy data.
+- Created **pivot tables** to display medal counts by event and gender.
+- Developed an **interactive Streamlit app** for users to explore medalists, events, and medals won.  
+📊 This project demonstrates my ability to handle **messy data**, apply **data transformation techniques**, and build **interactive applications**.
 
 ---
 
-## 🚀 Notable Projects  
+### 🐧 Palmer's Penguins - Interactive Data App
+This **Streamlit-powered web app** allows users to explore the **Palmer's Penguins dataset**, filtering penguins based on species and body mass.
 
-### 🐧 Streamlit App - Palmer's Penguins  
-An interactive app allowing you to see certain penguins based on island and body mass.  
-
-### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/TidyData-Project)  
-In this project, I cleaned and visualized the 2008 Olympic medalist dataset using **tidy data principles**. I used **pandas** to restructure the dataset with the `melt()` function, split event names to extract gender and event details, and created pivot tables to show medal counts by event and gender. The project is fully interactive with **Streamlit**, where users can explore medalists, events, and gender-based medal counts.  
-
-This project complements my overall coding portfolio by demonstrating my ability to work with raw data, apply data-cleaning techniques, and build interactive applications.  
+#### Features:
+- **Dropdown selection** to view penguins by species.
+- **Interactive slider** to filter penguins by body mass.
+- **Live data updates** showing filtered results instantly.
+  
+📊 This project showcases my skills in **data visualization**, **interactive UI design**, and **working with real-world datasets**.
 
 ---
 
-Let me know if you'd like any further modifications! 🚀  
+## 📁 Project Organization Plan
+To keep this repository structured and user-friendly, I organize my projects with:
+- Clearly named folders 📂
+- Well-documented code 📜
+- Relevant **visuals and models** to enhance understanding 🖼️
+
+---
+
+## 🚀 Future Goals
+- Expand my **data visualization** skills.
+- Work on more **real-world datasets**.
+- Learn more about **machine learning** and **predictive analytics**.
+
+---
+
+### 🔗 Connect with Me  
+📩 [LinkedIn](https://www.linkedin.com/in/jamesdedge/)  
+✉️ [Email](mailto:jedge@nd.edu)  
+
+---
 
