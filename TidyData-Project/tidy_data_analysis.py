@@ -18,9 +18,20 @@ st.dataframe(df.head())
 st.markdown("<br>", unsafe_allow_html=True)
 
 
-st.markdown("<h3 style='color: #FF6347;'>📊 Melted Data Preview</h3>", unsafe_allow_html=True)
+st.markdown("<h3 style='color: #FF6347;'>🫠 Melted Data Preview</h3>", unsafe_allow_html=True)
 st.markdown("""First, we use the `melt()` function to transform 
-            the dataset so that each row represents a single athlete's medal in a specific event.""")
+            the dataset so that each row represents a single athlete's medal in a specific event. 
+            However, this keeps all of the null data.""")
+df_melted = (
+        df 
+        .melt(id_vars=["medalist_name"], var_name="Event", value_name="Medal"))
+st.dataframe(df_melted.head(10))
+
+st.markdown("<h3 style='color: #FF6347;'>💧 Dropping Null and Duplicate Values </h3>", unsafe_allow_html=True)
+st.markdown("""Next we used `drop_duplicates()` to get rid of any duplicate values,
+            `dropna()` to get rid of any missing values,
+            and `.rename()` to change **medalist_name** to **Athlete** to make it more visually appealing.""")
+
 df_melted = (
         df 
         .melt(id_vars=["medalist_name"], var_name="Event", value_name="Medal") # melted on the athlete name
@@ -35,8 +46,9 @@ st.dataframe(df_melted.head())
 st.markdown("<br>", unsafe_allow_html=True)
 
 st.markdown("<h3 style='color: #FF6347;'>🧽Cleaning the Data</h3>", unsafe_allow_html=True)
-st.markdown("""We then split the `Event` column into `Gender` and `Event` to separate athlete participation details. 
-            This makes the data more structured.""")
+st.markdown("""We then used `str.split()` to split the **Event** column into **Gender** and **Event** to separate athlete participation details. 
+            This makes the data more structured.
+            Additionally, we used `str.capitalize()` to capitalize all of our data to make it neater.""")
 # Split the column to make the data easier to digest, a new column for gender and a new column for event
 df_melted[['Gender', 'Event']] = df_melted['Event'].str.split('_', expand=True)
 # Capitalize all of the data to make it look neat
