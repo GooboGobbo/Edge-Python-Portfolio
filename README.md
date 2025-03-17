@@ -12,7 +12,8 @@ Key features:
 - Used **Pandas `melt()`** to restructure the dataset.
 - Extracted gender and event details from messy data.
 - Created **pivot tables** to display medal counts by event and gender.
-- Developed an **interactive Streamlit app** for users to explore medalists, events, and medals won.  
+- Developed an **interactive Streamlit app** for users to explore medalists, events, and medals won.
+
 📊 This project demonstrates my ability to handle **messy data**, apply **data transformation techniques**, and build **interactive applications**.
 
 ---
