@@ -20,6 +20,8 @@ Clone this repository and navigate to the project folder. Then, run the followin
 ```sh
 streamlit run penguins_app.py
 ```
+---
+
 ## 📊 Dataset Description  
 **Dataset:** `penguins.csv`
 
@@ -29,3 +31,20 @@ The dataset includes the following attributes for each penguin:
 - **Body mass** (grams)
 - **Bill length & depth**
 - **Flipper length**
+
+---
+
+## 🔍 Key Features
+- **Dropdown Selection:** Choose a species to filter penguins.
+- **Interactive Slider:** Adjust body mass range to filter results.
+- **Live Data Updates:** View updated penguin data instantly.
+
+This project showcases data visualization, interactive UI design, and real-world dataset exploration.
+
+---
+
+## 📁 Project Organization
+- `penguins_app.py` → Main Streamlit app
+- `penguins.csv` → Dataset
+- `README.md` → Project documentation
+- `Images/` → Screenshots for documentation
