@@ -18,7 +18,7 @@ Key features:
 
 ---
 
-### 🐧 Palmer's Penguins - Interactive Data App
+### 🐧 [Palmer's Penguins - Interactive Data App](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/basic-streamlit-app)
 This **Streamlit-powered web app** allows users to explore the **Palmer's Penguins dataset**, filtering penguins based on species and body mass.
 
 #### Features:
