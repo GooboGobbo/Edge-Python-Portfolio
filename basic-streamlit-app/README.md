@@ -13,3 +13,10 @@ Through this app, users can filter penguins based on **species** and **body mass
 Ensure you have **Python 3.7+** and the required packages installed:  
 ```sh
 pip install streamlit pandas
+```
+### 2️⃣ Run the Streamlit App  
+Clone this repository and navigate to the project folder. Then, run the following command:  
+
+```sh
+streamlit run penguins_app.py
+```
