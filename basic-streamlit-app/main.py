@@ -7,7 +7,7 @@ st.subheader("Made by James Edge")
 
 st.write("This is an interactive app where you can manipulate data in Palmer's Penguins data set")
 
-df = pd.read_csv("penguins.csv")
+df = pd.read_csv("data/penguins.csv")
 
 species = st.selectbox('Select a Species', df["species"].unique())
 st.write(f'Penguins in {species}')
