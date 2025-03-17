@@ -3,47 +3,50 @@
 Welcome to my Python projects repository! Here, I showcase interactive applications and data analysis projects built using **Streamlit**, **Pandas**, and other tools. My goal is to turn raw data into meaningful insights while improving my coding skills.
 
 ---
-# 🏅 2008 Olympic Medalists - Tidy Data Project
 
-## Overview
-This project focuses on tidying and visualizing data from the 2008 Olympic Games. The raw dataset contains messy information, requiring data cleaning before meaningful insights can be drawn.
+## 📌 Project List
 
-## Data Cleaning Process
-- **Melting Data**: Transformed the dataset so each row represents a single athlete's medal in a specific event.
-- **Removing Duplicates and Null Values**: Used `.drop_duplicates()` and `.dropna()` to clean missing or redundant data.
-- **Data Structuring**: Split the `Event` column into `Gender` and `Event` to separate participation details.
-- **Capitalization**: Used `.str.capitalize()` to ensure uniform formatting.
+### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/TidyData-Project)
+This project focuses on **cleaning and visualizing** the 2008 Olympic medalist dataset using **tidy data principles**.  
+Key features:
+- Used **Pandas `melt()`** to restructure the dataset.
+- Extracted gender and event details from messy data.
+- Created **pivot tables** to display medal counts by event and gender.
+- Developed an **interactive Streamlit app** for users to explore medalists, events, and medals won.
 
-## Visualizations
-### 🏆 Medal Count by Event & Gender
-- Bar chart displaying medal counts per event, separated by gender.
-
-### ⭐ Athlete Achievements
-- Dropdown selection allows users to view an athlete’s medals.
-
-### 🏅 Medalists by Event & Gender
-- Users can filter by event and gender to see the top medalists, sorted by medal type.
-
-## Technologies Used
-- **Python** (pandas, Streamlit)
-- **Data Cleaning & Manipulation**
-- **Interactive Visualization**
+📊 This project demonstrates my ability to handle **messy data**, apply **data transformation techniques**, and build **interactive applications**.
 
 ---
 
-# 🐧 Palmer's Penguins Interactive App
+### 🐧 [Palmer's Penguins - Interactive Data App](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/basic-streamlit-app)
+This **Streamlit-powered web app** allows users to explore the **Palmer's Penguins dataset**, filtering penguins based on species and body mass.
 
-## Overview
-This Streamlit app provides an interactive interface for exploring the **Palmer's Penguins** dataset.
+#### Features:
+- **Dropdown selection** to view penguins by species.
+- **Interactive slider** to filter penguins by body mass.
+- **Live data updates** showing filtered results instantly.
+  
+📊 This project showcases my skills in **data visualization**, **interactive UI design**, and **working with real-world datasets**.
 
-## Features
-- **Filter by Species**: Select a penguin species to view relevant data.
-- **Body Mass Filter**: Use a slider to filter penguins by body mass.
+---
 
-## Technologies Used
-- **Python** (pandas, Streamlit)
-- **Data Filtering & Display**
+## 📁 Project Organization Plan
+To keep this repository structured and user-friendly, I organize my projects with:
+- Clearly named folders 📂
+- Well-documented code 📜
+- Relevant **visuals and models** to enhance understanding 🖼️
 
-## Usage
-Simply run the Streamlit app to interactively explore the dataset, filtering by species and body mass.
+---
 
+## 🚀 Future Goals
+- Expand my **data visualization** skills.
+- Work on more **real-world datasets**.
+- Learn more about **machine learning** and **predictive analytics**.
+
+---
+
+### 🔗 Connect with Me  
+📩 [LinkedIn](https://www.linkedin.com/in/jamesdedge/)  
+✉️ [Email](mailto:jedge@nd.edu)  
+
+---
