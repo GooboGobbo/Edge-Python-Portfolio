@@ -48,6 +48,7 @@ This app allows users to explore **Named Entity Recognition (NER)** using the `s
 
 🔗 **[Live App on Streamlit Cloud](https://share.streamlit.io/yourusername/NERStreamlitApp)**
 
+---
 
 ## 📁 Project Organization Plan
 To keep this repository structured and user-friendly, I organize my projects with:
