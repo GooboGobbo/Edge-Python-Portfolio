@@ -126,7 +126,10 @@ if "user_text" not in st.session_state:
 # -----------------------------------------------------------------------------
 # Displays the main title and subtitle with enhanced formatting.
 # =============================================================================
-st.markdown('<div class="big-header">🧠 Custom Named Entity Recognition App</div>', unsafe_allow_html=True)
+st.markdown(
+    '<div class="big-header" style="color:#C99700;">🧠 Custom Named Entity Recognition App</div>',
+    unsafe_allow_html=True
+)
 st.markdown('<div class="sub-header">Built with spaCy and Streamlit</div>', unsafe_allow_html=True)
 
 # =============================================================================
