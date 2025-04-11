@@ -1,4 +1,3 @@
-streamlit
+streamlit==1.44.1
 spacy
-pip install --upgrade pip
-python -m spacy download en_core_web_sm
+
