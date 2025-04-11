@@ -90,5 +90,5 @@ Once your text and custom rules (if any) are set:
 
 
 ## 📬 Contact  
-For feedback or inquiries, please contact me at: [your.email@example.com](mailto:jedge@nd.edu)
+For feedback or inquiries, please contact me at: [jedge@nd.edu](mailto:jedge@nd.edu)
 
