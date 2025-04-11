@@ -142,7 +142,10 @@ col1, col2 = st.columns(2)
 
 # ---------------- TEXT INPUT SECTION (LEFT COLUMN) ----------------
 with col1:
-    st.markdown("### Text Input")
+    st.markdown(
+    '<div class="big-header" style="color:#C99700;">Text Input</div>',
+    unsafe_allow_html=True
+)
     st.markdown('<p class="instruction">Enter or upload your text below.</p>', unsafe_allow_html=True)
     
     input_method = st.radio("Choose Input Method", ["Type or Paste Text", "Upload Text File (.txt)"])
@@ -159,7 +162,11 @@ with col1:
 
 # ---------------- CUSTOM RULES SECTION (RIGHT COLUMN) ----------------
 with col2:
-    st.markdown("### Custom Entity Rules (Optional)")
+    st.markdown(
+    '<div class="big-header" style="color:#C99700;">Custom Entity Rules (Optional)</div>',
+    unsafe_allow_html=True
+)
+
     st.markdown('<p class="instruction">Define a label and a matching phrase (e.g., "ORG" + "Notre Dame").</p>', unsafe_allow_html=True)
     
     rule_label = st.text_input("Entity Label", key="rule_label")
