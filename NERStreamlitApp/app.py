@@ -52,7 +52,7 @@ st.sidebar.markdown(
     """
     - **Home:** Main NER application.
     - **Documentation:** [spaCy EntityRuler](https://spacy.io/usage/rule-based-matching)
-    - **Portfolio:** [My GitHub Portfolio](https://github.com/yourusername)
+    - **Portfolio:** [My GitHub Portfolio](https://github.com/GooboGobbo/Edge-Python-Portfolio)
     """
 )
 st.sidebar.markdown("---")
