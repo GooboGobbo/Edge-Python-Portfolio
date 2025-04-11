@@ -163,7 +163,7 @@ with col1:
 # ---------------- CUSTOM RULES SECTION (RIGHT COLUMN) ----------------
 with col2:
     st.markdown(
-    '<div class="header" style="color:#C99700;">Custom Entity Rules (Optional)</div>',
+    '###< style="color:#C99700;">🧠 Custom Named Entity Recognition App</div>',
     unsafe_allow_html=True
 )
 
