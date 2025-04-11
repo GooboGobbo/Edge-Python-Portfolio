@@ -46,7 +46,7 @@ This app allows users to explore **Named Entity Recognition (NER)** using the `s
 - Apply **custom logic (EntityRuler)** to extend pretrained machine learning models
 - Handle file uploads, state management, and custom styling
 
-🔗 **[Live App on Streamlit Cloud](https://share.streamlit.io/yourusername/NERStreamlitApp)**
+🔗 **[Live App on Streamlit Cloud](https://nergoobogobbo.streamlit.app/)**
 
 ---
 
