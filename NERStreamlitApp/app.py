@@ -2,10 +2,11 @@ import streamlit as st
 import spacy
 
 # =============================================================================
-# Custom CSS Styling
+# CUSTOM CSS STYLING
 # -----------------------------------------------------------------------------
-# This section customizes the visual style of your app, including headers,
-# instructions, footer, and a green highlight for recognized named entities.
+# This block injects custom HTML and CSS styling into the app.
+# It enhances the visual hierarchy by styling headers, footers, and hints.
+# Useful for a cleaner, more professional UI.
 # =============================================================================
 st.markdown(
     """
@@ -30,24 +31,19 @@ st.markdown(
         color: #aaa;
         margin-top: 40px;
     }
-    .ner-highlight {
-        background-color: #d4edda;
-        border-radius: 4px;
-        padding: 2px 6px;
-        margin-bottom: 4px;
-        display: inline-block;
-        font-weight: 600;
-        color: #155724;
-    }
     </style>
     """,
     unsafe_allow_html=True
 )
 
 # =============================================================================
-# Sidebar: Creator Info & Navigation
+# SIDEBAR CONTENT
 # -----------------------------------------------------------------------------
-# This section personalizes the app and provides helpful links and documentation.
+# This section populates the sidebar with:
+# - Creator bio
+# - Helpful navigation links
+# - Embedded help section
+# - Sample text options
 # =============================================================================
 st.sidebar.markdown("## 👤 Creator")
 st.sidebar.markdown("""
@@ -60,54 +56,47 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("## Navigation")
 st.sidebar.markdown(
     """
-    - **Home:** Main NER application  
+    - **Home:** Main NER app  
     - **Documentation:** [spaCy EntityRuler](https://spacy.io/usage/rule-based-matching)  
-    - **Portfolio:** [My GitHub Portfolio](https://github.com/GooboGobbo/Edge-Python-Portfolio)
+    - **Portfolio:** [GitHub Portfolio](https://github.com/GooboGobbo/Edge-Python-Portfolio)
     """
 )
 st.sidebar.markdown("---")
 
+# Collapsible help guide to assist users.
 st.sidebar.expander("Help / Documentation", expanded=True).markdown(
     """
-    **Overview:**  
-    This app uses spaCy's Named Entity Recognition (NER) along with custom rules from 
-    the EntityRuler to highlight named entities in your text.
+    **App Overview:**  
+    This app uses spaCy's Named Entity Recognition (NER) and rule-based EntityRuler 
+    to highlight named entities in your custom or uploaded text.
 
-    **Steps:**  
-    1. Input text manually, upload a .txt file, or load a sample  
-    2. Optionally define custom entity rules  
-    3. Click "Run NER"  
-    4. View recognized entities and statistics  
+    **Steps to Use:**  
+    1. Enter or upload text (or load a sample).  
+    2. Optionally define custom entity rules.  
+    3. Click "Run NER" to analyze the text.  
+    4. View extracted entities, statistics, and highlighted output.
     """
 )
-st.sidebar.markdown("---")
 
 # =============================================================================
-# Sidebar: Sample Texts
+# SAMPLE TEXT OPTIONS
 # -----------------------------------------------------------------------------
-# Predefined sample texts for quick testing and demonstration.
+# These are pre-loaded samples users can select to quickly test the app.
+# Each one covers a different topic domain (e.g., politics, sports, tech).
 # =============================================================================
 sample_texts = {
     "Sample 1 - Obama & Politics": (
         "Barack Obama, the 44th President of the United States, delivered a stirring speech at Harvard University "
-        "in Cambridge, Massachusetts. During his presidency, Obama focused heavily on healthcare reform and economic recovery, "
-        "especially in urban centers such as Chicago and New York City. He also met with leaders from countries like Germany, "
-        "Canada, and Japan to discuss international diplomacy. In 2009, he was awarded the Nobel Peace Prize. His administration's "
-        "initiatives were frequently covered by media outlets like CNN, The Washington Post, and BBC News."
+        "in Cambridge, Massachusetts. During his presidency, he focused heavily on healthcare reform and economic recovery, "
+        "especially in urban centers like Chicago and New York City. In 2009, he received the Nobel Peace Prize."
     ),
-
     "Sample 2 - Sports & Entertainment": (
-        "At the Los Angeles Lakers' home game at the Crypto.com Arena, LeBron James and Anthony Davis led a thrilling comeback "
-        "against the Golden State Warriors. ESPN commentators praised their teamwork and leadership. Earlier that weekend, "
-        "Taylor Swift performed at Madison Square Garden in New York City as part of her sold-out Eras Tour, drawing fans from "
-        "across the globe. Meanwhile, Tom Brady officially announced his retirement from the NFL during a live interview with NBC Sports."
+        "LeBron James led the Los Angeles Lakers to a win at Crypto.com Arena. Meanwhile, Taylor Swift performed in a sold-out "
+        "concert at Madison Square Garden. Tom Brady made headlines as he announced his retirement from the NFL."
     ),
-
     "Sample 3 - Business & Tech": (
-        "In London, Google announced a $2 billion investment in AI research, partnering with Oxford University and several British tech firms. "
-        "The announcement was made at the TechFuture Global Summit, where CEOs like Elon Musk (Tesla, SpaceX) and Satya Nadella (Microsoft) "
-        "shared their visions for ethical innovation. Apple also unveiled its new Vision Pro headset during a livestream from Cupertino, "
-        "California. The event trended globally on Twitter and LinkedIn, with analysts at Bloomberg predicting a surge in market valuation."
+        "Google revealed a $2B investment in AI, partnering with Oxford University. Elon Musk and Satya Nadella gave talks at "
+        "the TechFuture Summit, and Apple announced the Vision Pro headset from its Cupertino HQ."
     )
 }
 st.sidebar.markdown("## Sample Texts")
@@ -120,9 +109,10 @@ st.sidebar.markdown("---")
 st.sidebar.markdown("**App Version 1.0**")
 
 # =============================================================================
-# Session State Setup
+# SESSION STATE INITIALIZATION
 # -----------------------------------------------------------------------------
-# Used to persist text input and custom rules across reruns.
+# These keys are used to persist user input and custom rules across interactions.
+# They ensure the app doesn't lose data when it reruns after a button is clicked.
 # =============================================================================
 if "custom_patterns" not in st.session_state:
     st.session_state["custom_patterns"] = []
@@ -131,22 +121,28 @@ if "user_text" not in st.session_state:
     st.session_state["user_text"] = ""
 
 # =============================================================================
-# Main Title
+# MAIN APP HEADER
 # -----------------------------------------------------------------------------
+# Displays the main title and subtitle with enhanced formatting.
+# =============================================================================
 st.markdown('<div class="big-header">🧠 Custom Named Entity Recognition App</div>', unsafe_allow_html=True)
 st.markdown('<div class="sub-header">Built with spaCy and Streamlit</div>', unsafe_allow_html=True)
 
 # =============================================================================
-# Layout: Text Input (Left) + Entity Rule Builder (Right)
+# MAIN INTERFACE: TWO-COLUMN LAYOUT
+# -----------------------------------------------------------------------------
+# Column 1: Input for user text (typed or uploaded)
+# Column 2: Interface for defining and managing custom entity rules
 # =============================================================================
 col1, col2 = st.columns(2)
 
+# ---------------- TEXT INPUT SECTION (LEFT COLUMN) ----------------
 with col1:
     st.markdown("### Text Input")
-    st.markdown('<p class="instruction">Enter or upload the text you want to analyze.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="instruction">Enter or upload your text below.</p>', unsafe_allow_html=True)
     
     input_method = st.radio("Choose Input Method", ["Type or Paste Text", "Upload Text File (.txt)"])
-    
+
     if input_method == "Type or Paste Text":
         user_text = st.text_area("Enter Text Here", height=300, value=st.session_state["user_text"], key="user_text")
     else:
@@ -157,36 +153,46 @@ with col1:
         else:
             user_text = st.session_state.user_text
 
+# ---------------- CUSTOM RULES SECTION (RIGHT COLUMN) ----------------
 with col2:
     st.markdown("### Custom Entity Rules (Optional)")
-    st.markdown('<p class="instruction">Define your own label (e.g., PERSON) and text pattern.</p>', unsafe_allow_html=True)
+    st.markdown('<p class="instruction">Define a label and a matching phrase (e.g., "ORG" + "Notre Dame").</p>', unsafe_allow_html=True)
+    
+    rule_label = st.text_input("Entity Label", key="rule_label")
+    rule_pattern = st.text_input("Entity Pattern", key="rule_pattern")
 
-    rule_label = st.text_input("Entity Label (e.g., PERSON, ORG)", key="rule_label")
-    rule_pattern = st.text_input("Entity Pattern (e.g., Barack Obama)", key="rule_pattern")
-
+    # Add custom rule to session state
     if st.button("Add Custom Rule"):
         if rule_label.strip() and rule_pattern.strip():
             st.session_state.custom_patterns.append({"label": rule_label.strip(), "pattern": rule_pattern.strip()})
             st.success(f"Added rule: {rule_label.strip()} — {rule_pattern.strip()}")
         else:
-            st.error("Both fields are required.")
-    
+            st.error("Both label and pattern fields are required.")
+
+    # Display current rules in a collapsible section
     if st.session_state.custom_patterns:
         with st.expander("Current Custom Rules"):
             st.json(st.session_state.custom_patterns)
 
+    # Clear all custom rules
     if st.button("Clear Custom Rules"):
         st.session_state.custom_patterns = []
         st.success("Cleared all custom rules.")
 
 # =============================================================================
-# Load spaCy model (No caching used)
+# SPA-CY MODEL LOADER
+# -----------------------------------------------------------------------------
+# This function loads the pre-trained English model.
+# It assumes the model is already available (or will be downloaded via your deployment logic).
 # =============================================================================
 def load_model():
     return spacy.load("en_core_web_sm")
 
 # =============================================================================
-# Add custom patterns to spaCy's EntityRuler
+# ADD ENTITY RULER TO PIPELINE
+# -----------------------------------------------------------------------------
+# This function injects custom rules into the spaCy NLP pipeline.
+# It first removes any existing EntityRuler, then adds a fresh one.
 # =============================================================================
 def add_entity_ruler(nlp, patterns):
     if "entity_ruler" in nlp.pipe_names:
@@ -196,7 +202,13 @@ def add_entity_ruler(nlp, patterns):
     return nlp
 
 # =============================================================================
-# NER Execution and Display
+# MAIN BUTTON: Run NER and Display Results
+# -----------------------------------------------------------------------------
+# When "Run NER" is clicked:
+# - The model is loaded
+# - Custom rules are applied (if any)
+# - The text is processed
+# - Entities and visualizations are displayed
 # =============================================================================
 if st.button("Run NER"):
     if not st.session_state.user_text.strip():
@@ -204,43 +216,47 @@ if st.button("Run NER"):
     else:
         try:
             nlp = load_model()
+
             if st.session_state.custom_patterns:
                 nlp = add_entity_ruler(nlp, st.session_state.custom_patterns)
+
             with st.spinner("Analyzing text..."):
                 doc = nlp(st.session_state.user_text)
-            
+
+            # ---- Display Recognized Entities (Split into Columns) ----
             st.markdown("### Recognized Entities")
             if doc.ents:
-                entities = [f'<span class="ner-highlight">{ent.text}</span> <code>{ent.label_}</code>' for ent in doc.ents]
-                mid = (len(entities) + 1) // 2
+                entity_lines = [f"**{ent.text}** — `{ent.label_}`" for ent in doc.ents]
+                mid = (len(entity_lines) + 1) // 2
                 col1, col2 = st.columns(2)
                 with col1:
-                    for ent in entities[:mid]:
-                        st.markdown(ent, unsafe_allow_html=True)
+                    for line in entity_lines[:mid]:
+                        st.markdown(line)
                 with col2:
-                    for ent in entities[mid:]:
-                        st.markdown(ent, unsafe_allow_html=True)
+                    for line in entity_lines[mid:]:
+                        st.markdown(line)
 
-                # Show entity statistics
+                # ---- Entity Frequency Statistics ----
                 stats = {}
                 for ent in doc.ents:
                     stats[ent.label_] = stats.get(ent.label_, 0) + 1
                 st.markdown("#### Entity Statistics")
-                st.write("Total entities recognized:", len(doc.ents))
+                st.write(f"Total entities recognized: {len(doc.ents)}")
                 st.table(stats)
             else:
-                st.info("No entities recognized.")
+                st.info("No named entities were found.")
 
-            # DisplaCy Highlighted Text
+            # ---- Visualize Highlighted Text ----
             st.markdown("### Highlighted Text")
             html = spacy.displacy.render(doc, style="ent", jupyter=False)
             st.markdown(html, unsafe_allow_html=True)
 
         except Exception as e:
-            st.error(f"An error occurred: {e}")
+            st.error(f"An error occurred while processing: {e}")
 
 # =============================================================================
-# Footer
+# FOOTER
+# -----------------------------------------------------------------------------
+# A simple footer to credit the course context.
 # =============================================================================
 st.markdown('<div class="footer">Developed as part of the Elements of Computing II course.</div>', unsafe_allow_html=True)
-
