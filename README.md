@@ -30,7 +30,7 @@ This **Streamlit-powered web app** allows users to explore the **Palmer's Pengui
 
 ---
 
-### 🧠 [NER Streamlit App – Custom Named Entity Recognition Tool](https://github.com/GooboGobbo/NERStreamlitApp)
+### 🧠 [NER Streamlit App – Custom Named Entity Recognition Tool](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/NERStreamlitApp)
 This app allows users to explore **Named Entity Recognition (NER)** using the `spaCy` library and `Streamlit`, with full support for **custom rule creation** through spaCy’s `EntityRuler`.
 
 #### Features:
