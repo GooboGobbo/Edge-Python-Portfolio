@@ -62,30 +62,24 @@ streamlit run app.py
 The app is deployed on Streamlit Community Cloud. You can view it live here:  
 [https://nergoobogobbo.streamlit.app/](https://nergoobogobbo.streamlit.app/)
 
-## 🎓 Usage Instructions
+## 🎓 How to Use
 
-### Text Input  
-- **Choose Input Method:**  
-  Use the radio buttons to select whether you want to type/paste your text or upload a `.txt` file.
+### 📄 Input Your Text
+- Use the radio buttons to select between typing, pasting, or uploading text.
+- Load a sample text from the sidebar for quick testing.
 
-- **Load Sample Text:**  
-  Pick a sample from the sidebar and click **"Load Sample Text"** to quickly populate the text area.
+### 🏷️ Add Custom Entity Rules
+- Input a label (like `PERSON`) and a pattern (like `"Notre Dame"`).
+- Click **Add Custom Rule** to save it.
+- View current rules by expanding the **Current Custom Rules** section.
+- Use **Clear Custom Rules** to reset.
 
-### Custom Entity Rules  
-- **Add a Rule:**  
-  Enter an entity label (like `PERSON` or `ORG`) and a pattern (such as "Barack Obama") to create a custom rule.
-
-- **View Current Rules:**  
-  Expand the **"Current Custom Rules"** section to see all added rules.
-
-- **Clear Rules:**  
-  Click **"Clear Custom Rules"** to remove all custom rules if needed.
-
-### Run NER  
-Once your text and custom rules (if any) are set:
-- Click the **Run NER** button.
-- The app processes your text with spaCy, displaying recognized entities in two columns.
-- You'll also see a breakdown of entity statistics (total and per label) and a version of your text with highlighted entities.
+### 🧠 Run the NER Model
+- Click **Run NER** to process the text.
+- Results will display:
+  - ✅ A list of recognized entities  
+  - 📊 A breakdown of entity counts by type  
+  - 🖍️ The text with highlighted entities
 
 ## 📖 References  
 - [spaCy Documentation](https://spacy.io/usage)  
