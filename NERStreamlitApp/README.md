@@ -1,26 +1,30 @@
 # 🔥 NER Streamlit App
 
 ## 📚 Overview  
-Welcome to the **NER Streamlit App**! This interactive application lets you perform Named Entity Recognition using **spaCy** and **Streamlit**. You can enter your own text or load a sample, define custom entity rules, and see real-time results with intuitive visualizations. This project is part of my Elements of Computing II portfolio.
+Welcome to the **NER Streamlit App**! This interactive tool allows you to perform Named Entity Recognition (NER) using **spaCy** and **Streamlit**. You can input custom text, define entity rules, and instantly visualize the results. This project was developed as part of my Elements of Computing II portfolio.
 
 ---
 
 ## ✨ Features  
-- **Flexible Text Input:**  
-  Choose to type/paste text, upload a `.txt` file, or load one of the sample texts from the sidebar.
-- **Custom Entity Rules:**  
-  Easily add custom rules by specifying an entity label (e.g., `PERSON`, `ORG`) and a corresponding pattern (e.g., "Barack Obama").  
-  View current custom rules in a collapsible section and clear them if needed.
-- **Interactive Visualization:**  
-  Recognized entities are displayed in two columns for clarity, and the app shows highlighted text annotated with entities.
-- **Responsive Feedback:**  
-  Get detailed entity statistics (total count and breakdown by type) right after processing.
-- **Integrated Help:**  
-  Access usage instructions and documentation through the sidebar for a smooth user experience.
+- **Flexible Text Input**  
+  Type/paste your own text, upload a `.txt` file, or use one of the built-in sample texts.
+
+- **Custom Entity Rules**  
+  Add custom rules by specifying an entity label (e.g., `PERSON`, `ORG`) and a matching pattern (e.g., `"Barack Obama"`).  
+  Rules are displayed in an expandable list and can be cleared at any time.
+
+- **Interactive Visualizations**  
+  View recognized entities in a clean two-column layout, along with a color-highlighted version of your text.
+
+- **Entity Statistics**  
+  See a count of all detected entities, with a breakdown by type (e.g., PERSON, ORG, GPE).
+
+- **Built-in Help & Documentation**  
+  The sidebar includes instructions and external links to spaCy and Streamlit documentation.
 
 ---
 
-## 🚀 Setup & Installation
+## 🚀 Getting Started
 
 ### 1. Clone the Repository
 ```bash
