@@ -30,6 +30,25 @@ This **Streamlit-powered web app** allows users to explore the **Palmer's Pengui
 
 ---
 
+### 🧠 [NER Streamlit App – Custom Named Entity Recognition Tool](https://github.com/GooboGobbo/NERStreamlitApp)
+This app allows users to explore **Named Entity Recognition (NER)** using the `spaCy` library and `Streamlit`, with full support for **custom rule creation** through spaCy’s `EntityRuler`.
+
+#### Features:
+- 📝 **Text Input Options** – Type, paste, upload `.txt` files, or load sample texts via the sidebar.
+- 🏷️ **Custom Rules** – Users can define custom entity labels (e.g., `PERSON`, `ORG`) and text patterns (e.g., "Notre Dame").
+- 🔍 **Real-Time NER Processing** – Results are displayed instantly with entities highlighted and summarized.
+- 📊 **Entity Statistics** – A breakdown of entity types and counts is shown for every processed input.
+- 🎨 **Custom UI Theme** – The app features a dark mode with Notre Dame-inspired styling and polished layout.
+
+📌 This project demonstrates my ability to:
+- Integrate advanced NLP tools (`spaCy`) into real-time applications
+- Build **interactive user experiences** with Streamlit
+- Apply **custom logic (EntityRuler)** to extend pretrained machine learning models
+- Handle file uploads, state management, and custom styling
+
+🔗 **[Live App on Streamlit Cloud](https://share.streamlit.io/yourusername/NERStreamlitApp)**
+
+
 ## 📁 Project Organization Plan
 To keep this repository structured and user-friendly, I organize my projects with:
 - Clearly named folders 📂
