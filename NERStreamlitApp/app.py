@@ -236,13 +236,19 @@ if st.button("Run NER"):
                     for line in entity_lines[mid:]:
                         st.markdown(line)
 
-                # ---- Entity Frequency Statistics ----
+                # ---- Entity Frequency Statistics (Sorted by Count Descending) ----
                 stats = {}
                 for ent in doc.ents:
                     stats[ent.label_] = stats.get(ent.label_, 0) + 1
+
+                # Sort the stats dictionary by frequency (value) in descending order
+                sorted_stats = dict(sorted(stats.items(), key=lambda item: item[1], reverse=True))
+
+                # Convert to a format Streamlit can display cleanly as a table
                 st.markdown("#### Entity Statistics")
                 st.write(f"Total entities recognized: {len(doc.ents)}")
-                st.table(stats)
+                st.table({"Entity Type": list(sorted_stats.keys()), "Count": list(sorted_stats.values())})
+
             else:
                 st.info("No named entities were found.")
 
