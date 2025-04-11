@@ -60,7 +60,7 @@ streamlit run app.py
 
 ## 🌐 Deployment  
 The app is deployed on Streamlit Community Cloud. You can view it live here:  
-[https://share.streamlit.io/yourusername/NERStreamlitApp](https://share.streamlit.io/yourusername/NERStreamlitApp)
+[https://nergoobogobbo.streamlit.app/](https://nergoobogobbo.streamlit.app/)
 
 ## 🎓 Usage Instructions
 
