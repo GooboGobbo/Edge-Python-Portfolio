@@ -83,23 +83,12 @@ Once your text and custom rules (if any) are set:
 - The app processes your text with spaCy, displaying recognized entities in two columns.
 - You'll also see a breakdown of entity statistics (total and per label) and a version of your text with highlighted entities.
 
-
-🌐 Deployment
-The app is deployed on Streamlit Community Cloud. You can view it live here:
-https://share.streamlit.io/yourusername/NERStreamlitApp
-(Remember to update the URL once deployed.)
-
+## 📖 References  
+- [spaCy Documentation](https://spacy.io/usage)  
+- [spaCy EntityRuler](https://spacy.io/usage/rule-based-matching)  
+- [Streamlit Documentation](https://docs.streamlit.io/)
 
 
-📖 References
-spaCy Documentation
+## 📬 Contact  
+For feedback or inquiries, please contact me at: [your.email@example.com](mailto:jedge@nd.edu)
 
-spaCy EntityRuler
-
-Streamlit Documentation
-
-📝 License
-This project is licensed under the MIT License.
-
-📬 Contact
-For feedback or inquiries, please contact me at: your.email@example.com
