@@ -14,6 +14,79 @@ import time
 st.set_page_config(page_title="Learn Korean Hub 🇰🇷", layout="centered")
 st.title("Learn Korean: Mini Games Hub 🇰🇷🎮")
 
+
+# ---------------------------------------------------------------------------------------------------------------------------
+# Colors for UI
+# ---------------------------------------------------------------------------------------------------------------------------
+
+# --- Updated Korean Colors Theme Styling ---
+st.markdown(
+    """
+    <style>
+    /* App background */
+    .stApp {
+        background-color: #F8F9FA;
+        color: #111111;
+    }
+
+    /* Headers */
+    h1, h2, h3 {
+        color: #003DA5;
+    }
+
+    /* Buttons */
+    button[kind="primary"] {
+        background-color: #C60C30 !important;
+        color: #FFFFFF !important;
+        border-radius: 10px;
+        font-weight: bold;
+        border: none;
+    }
+
+    /* Sidebar */
+    .css-1d391kg, .css-1lcbmhc {
+        background-color: #E6ECF8;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    /* Text input, selectbox, textarea */
+    .stTextInput > div > div > input, 
+    .stSelectbox > div > div > select,
+    textarea {
+        border: 2px solid #003DA5;
+        border-radius: 5px;
+    }
+
+    /* Radio and form labels */
+    label {
+        color: #003DA5;
+        font-weight: bold;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+# --- Korean Flag Ribbon ---
+st.markdown(
+    """
+    <style>
+    .flag {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 60px;
+        height: auto;
+        z-index: 100;
+    }
+    </style>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" class="flag">
+    """,
+    unsafe_allow_html=True
+)
+
+
 # ---------------------------------------------------------------------------------------------------------------------------
 # Datasets for All Mini-Games
 # ---------------------------------------------------------------------------------------------------------------------------
@@ -356,7 +429,7 @@ Your goal is to correctly type the Hangul (Korean script) based on the Romanized
 ### 🔗 Learn more about Romanization:
 [Korean Romanization Guide - How to Study Korean](https://www.howtostudykorean.com/unit-0-lesson-1/)
         
----------------
+-------------
                  
                  """)
 
