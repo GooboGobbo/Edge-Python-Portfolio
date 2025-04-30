@@ -35,8 +35,8 @@ Make sure Python and pip are installed, then:
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/learn-korean-hub.git
-cd learn-korean-hub
+git clone https://github.com/GooboGobbo/StreamlitAppFinal.git
+cd StreamlitAppFinal
 
 # Install dependencies
 pip install -r requirements.txt
@@ -49,10 +49,6 @@ streamlit run app.py
 
 This app can be deployed for free using [**Streamlit Community Cloud**](https://streamlit.io/cloud).  
 You can also host it yourself using services like **PythonAnywhere** or **Replit**.
-
----
-
-<pre> ## 📂 Project Structure ``` learn-korean-hub/ ├── app.py # Main Streamlit app ├── README.md # Project documentation ├── requirements.txt # Python dependencies ``` </pre>
 
 
 ---
