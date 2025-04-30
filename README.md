@@ -14,15 +14,16 @@ A full-featured **Streamlit app** designed to help beginners learn Korean throug
 - 🏎️ **Korean TypeRacer** with timed sentence typing  
 - ⏳ **Tense Selector** to test Korean verb conjugation
 
-📚 The app also includes **sidebars with grammar guides**, color theming inspired by the Korean flag, and persistent score tracking across sessions.
+📚 The app also includes **sidebars with grammar guides** and persistent score tracking across sessions.
 
 💡 I built this project to **connect with my Korean heritage** and offer a fun, gamified experience for new learners — something I wish I had when I began learning the language.
 
 🧠 This project demonstrates:
-- Advanced **multi-tab Streamlit interactivity**
+- **Multi-tab Streamlit interactivity**
 - State handling, layout design, and UX polish
 - **Educational game logic** and text feedback
-- Integration of **cultural insights into app design**
+
+🔗 **[Live App on Streamlit Cloud](https://hangulpractice.streamlit.app/)**
 
 ---
 
