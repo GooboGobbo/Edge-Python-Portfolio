@@ -18,7 +18,7 @@ pip install streamlit pandas
 Clone this repository and navigate to the project folder. Then, run the following command:  
 
 ```sh
-streamlit run penguins_app.py
+streamlit run main.py
 ```
 ---
 
@@ -44,7 +44,6 @@ This project showcases data visualization, interactive UI design, and real-world
 ---
 
 ## 📁 Project Organization
-- `penguins_app.py` → Main Streamlit app
+- `main.py` → Main Streamlit app
 - `penguins.csv` → Dataset
 - `README.md` → Project documentation
-- `Images/` → Screenshots for documentation
