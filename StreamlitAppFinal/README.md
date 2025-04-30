@@ -43,3 +43,14 @@ pip install -r requirements.txt
 
 # Run the app
 streamlit run app.py
+
+## 🌐 Deployment
+
+This app can be deployed for free using [**Streamlit Community Cloud**](https://streamlit.io/cloud).  
+You can also host it yourself using services like **PythonAnywhere** or **Replit**.
+
+---
+
+## 📂 Project Structure
+
+learn-korean-hub/ ├── app.py # Main Streamlit app ├── README.md # Project documentation (you're reading it!) ├── requirements.txt # Python dependencies
