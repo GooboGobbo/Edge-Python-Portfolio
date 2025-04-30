@@ -52,6 +52,35 @@ You can also host it yourself using services like **PythonAnywhere** or **Replit
 
 ---
 
-## 📂 Project Structure
+<pre> ## 📂 Project Structure ``` learn-korean-hub/ ├── app.py # Main Streamlit app ├── README.md # Project documentation ├── requirements.txt # Python dependencies ``` </pre>
 
-learn-korean-hub/ ├── app.py # Main Streamlit app ├── README.md # Project documentation (you're reading it!) ├── requirements.txt # Python dependencies
+
+---
+
+## 📚 Learning Resources Included
+
+The app includes grammar help and references for:
+
+- ✅ **Korean verb tense explanations** in the **Tense Selector** tab sidebar  
+- ✅ **Romanization tips** and **Hangul block explanations** in the **Romanization** game sidebar  
+- ✅ **Vocabulary matched** with beginner-friendly terms and practical expressions  
+
+---
+
+## 🧠 Future Improvements
+
+- 🔊 Add audio pronunciation for words and sentences  
+- 📈 Track session history and total stats  
+- 📚 Add more vocab categories (e.g., food, weather, numbers)  
+- 🏆 Add leaderboards or multiplayer game modes  
+
+---
+
+## ✨ About the Author
+
+**James Edge**  
+University of Notre Dame  
+Final project for *Elements of Computing II*
+
+> “I built this app to combine my passion for learning Korean and my background in programming.  
+> I wanted to make something fun, useful, and educational — and something I wish I had when I started learning Hangul.”
