@@ -12,7 +12,64 @@ import time
 # ---------------------------------------------------------------------------------------------------------------------------
 
 st.set_page_config(page_title="Learn Korean Hub 🇰🇷", layout="centered")
+# --- Korean Color Theme Styling ---
+st.markdown(
+    """
+    <style>
+    /* App background and text */
+    .stApp {
+        background-color: #0d0c0c;
+        color: #fffcfc;
+    }
+
+    /* Headings */
+    h1, h2, h3 {
+        color: #003DA5;
+    }
+
+    /* Primary buttons */
+    button[kind="primary"] {
+        background-color: #C60C30 !important;
+        color: #FFFFFF !important;
+        border-radius: 8px;
+        font-weight: bold;
+        border: none;
+    }
+
+    /* Input borders */
+    .stTextInput > div > div > input,
+    .stTextArea > div > textarea,
+    .stSelectbox > div > div > select {
+        border: 2px solid #003DA5 !important;
+        border-radius: 5px;
+    }
+
+    /* Sidebar styling */
+    .css-1d391kg, .css-1lcbmhc {
+        background-color: #E6ECF8;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    /* Label colors */
+    label {
+        color: #003DA5 !important;
+        font-weight: bold;
+    }
+
+    /* Progress bars (streaks etc.) */
+    .stProgress > div > div > div {
+        background-color: #003DA5;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("Learn Korean: Mini Games Hub 🇰🇷🎮")
+
+
+
 
 
 # ---------------------------------------------------------------------------------------------------------------------------
