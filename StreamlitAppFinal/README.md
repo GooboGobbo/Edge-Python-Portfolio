@@ -61,6 +61,18 @@ The app includes grammar help and references for:
 
 ---
 
+## 📸 Visual Examples
+Below are some screenshots of the minigames in action. The first image is of Romanization -> Hangul, 
+the second being Typeracer
+
+## Raw Data
+<img src="Images/RawDataImage.png" width="600" />
+
+## Bar Chart Visualization
+<img src="Images/MedalCountImage.png" width="600"/>
+
+---
+
 ## ✨ About the Author
 
 **James Edge**  
