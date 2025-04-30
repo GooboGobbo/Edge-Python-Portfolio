@@ -46,7 +46,7 @@ A custom **Named Entity Recognition (NER)** interface using `spaCy` and `Streaml
 
 ---
 
-### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/TidyData-Project)
+### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/TidyData-Project)
 
 An interactive data cleaning and visualization app for the 2008 Olympic medalist dataset using **Pandas** and **Streamlit**.
 
