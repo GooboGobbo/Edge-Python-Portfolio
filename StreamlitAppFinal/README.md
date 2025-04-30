@@ -47,7 +47,7 @@ streamlit run app.py
 
 ## 🌐 Deployment
 
-This app can be deployed for free using [**Streamlit Community Cloud**](https://streamlit.io/cloud).  
+This app can be deployed for free using [**Streamlit Community Cloud**](https://hangulpractice.streamlit.app/).  
 
 ---
 
@@ -66,7 +66,7 @@ Below are some screenshots of the minigames in action. The first image is of Rom
 the second being Typeracer
 
 ## Raw Data
-<img src="Images/RawDataImage.png" width="600" />
+<img src="Images/RomanizationtoHangul.png" width="600" />
 
 ## Bar Chart Visualization
 <img src="Images/MedalCountImage.png" width="600"/>
