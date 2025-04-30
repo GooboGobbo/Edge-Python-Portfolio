@@ -62,8 +62,7 @@ The app includes grammar help and references for:
 ---
 
 ## 📸 Visual Examples
-Below are some screenshots of the minigames in action. The first image is of Romanization -> Hangul, 
-the second being Typeracer
+Below are some screenshots of the minigames in action.
 
 ## Romanization to Hangul Minigame
 <img src="Images/RomanizationtoHangul.png" width="600" />
