@@ -65,11 +65,11 @@ The app includes grammar help and references for:
 Below are some screenshots of the minigames in action. The first image is of Romanization -> Hangul, 
 the second being Typeracer
 
-## Raw Data
+## Romanization to Hangul Minigame
 <img src="Images/RomanizationtoHangul.png" width="600" />
 
-## Bar Chart Visualization
-<img src="Images/MedalCountImage.png" width="600"/>
+## Korean TypeRacer Minigame
+<img src="Images/KoreanTyperacer.png" width="600"/>
 
 ---
 
