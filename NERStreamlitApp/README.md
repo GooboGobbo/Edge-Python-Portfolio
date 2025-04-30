@@ -28,7 +28,7 @@ Welcome to the **NER Streamlit App**! This interactive tool allows you to perfor
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/NERStreamlitApp.git
+git clone https://github.com/GooboGobbo/NERStreamlitApp.git
 cd NERStreamlitApp
 ```
 

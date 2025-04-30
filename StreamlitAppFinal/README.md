@@ -48,8 +48,6 @@ streamlit run app.py
 ## 🌐 Deployment
 
 This app can be deployed for free using [**Streamlit Community Cloud**](https://streamlit.io/cloud).  
-You can also host it yourself using services like **PythonAnywhere** or **Replit**.
-
 
 ---
 
@@ -60,15 +58,6 @@ The app includes grammar help and references for:
 - ✅ **Korean verb tense explanations** in the **Tense Selector** tab sidebar  
 - ✅ **Romanization tips** and **Hangul block explanations** in the **Romanization** game sidebar  
 - ✅ **Vocabulary matched** with beginner-friendly terms and practical expressions  
-
----
-
-## 🧠 Future Improvements
-
-- 🔊 Add audio pronunciation for words and sentences  
-- 📈 Track session history and total stats  
-- 📚 Add more vocab categories (e.g., food, weather, numbers)  
-- 🏆 Add leaderboards or multiplayer game modes  
 
 ---
 
