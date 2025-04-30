@@ -7,10 +7,6 @@ Welcome to my Python projects repository! Here, I showcase interactive applicati
 ## 📌 Project List
 
 ### 🇰🇷 [Learn Korean: Mini Games Hub](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/StreamlitAppFinal)
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-red)
-![Live App](https://img.shields.io/badge/Live_App-Deployed-green)
-
 
 A full-featured **Streamlit app** designed to help beginners learn Korean through four interactive mini-games:  
 - ✍️ **Romanization ➔ Hangul** typing game  
@@ -28,6 +24,10 @@ A full-featured **Streamlit app** designed to help beginners learn Korean throug
 - **Educational game logic** and text feedback
 
 🔗 **[Live App on Streamlit Cloud](https://hangulpractice.streamlit.app/)**
+
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-red)
+![Live App](https://img.shields.io/badge/Live_App-Deployed-green)
 
 ---
 
