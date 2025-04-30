@@ -25,9 +25,12 @@ A full-featured **Streamlit app** designed to help beginners learn Korean throug
 
 🔗 **[Live App on Streamlit Cloud](https://hangulpractice.streamlit.app/)**
 
-![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
-![Streamlit](https://img.shields.io/badge/Built%20With-Streamlit-red)
-![Live App](https://img.shields.io/badge/Live_App-Deployed-green)
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)](https://streamlit.io/)
+[![Language](https://img.shields.io/badge/Focus-Korean%20Language%20Learning-yellow)]()
+[![Game-Based](https://img.shields.io/badge/Design-Mini%20Games-green)]()
+[![Live](https://img.shields.io/badge/Deployed-Streamlit%20Cloud-brightgreen)]()
+
 
 ---
 
@@ -48,6 +51,11 @@ A custom **Named Entity Recognition (NER)** interface using `spaCy` and `Streaml
 
 🔗 **[Live App on Streamlit Cloud](https://nergoobogobbo.streamlit.app/)**
 
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![spaCy](https://img.shields.io/badge/Library-spaCy-9cf)](https://spacy.io/)
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)](https://streamlit.io/)
+[![NER](https://img.shields.io/badge/Focus-Named%20Entity%20Recognition-blueviolet)]()
+
 ---
 
 ### 🏅 [2008 Olympic Medalists - Tidy Data Project](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/TidyData-Project)
@@ -61,6 +69,11 @@ An interactive data cleaning and visualization app for the 2008 Olympic medalist
 
 📊 This project highlights my ability to **clean messy data**, transform it into structured formats, and build clear, interactive visualizations.
 
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)](https://streamlit.io/)
+[![Data Cleaning](https://img.shields.io/badge/Focus-Data%20Cleaning-informational)]()
+[![Visualization](https://img.shields.io/badge/Includes-Data%20Visualization-yellowgreen)]()
+
 ---
 
 ### 🐧 [Palmer's Penguins - Interactive Data App](https://github.com/GooboGobbo/Edge-Python-Portfolio/tree/main/basic-streamlit-app)
@@ -72,6 +85,11 @@ A simple yet functional **Streamlit app** for exploring the popular Palmer Pengu
 - Real-time updates and clean, interactive layout
 
 📊 This was my first exploration with Streamlit and showcases my early grasp of **data filtering** and building **user-driven dashboards**.
+
+[![Python](https://img.shields.io/badge/Python-3.9+-blue)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)](https://streamlit.io/)
+[![Dataset](https://img.shields.io/badge/Dataset-Palmer's%20Penguins-lightgrey)]()
+[![UI](https://img.shields.io/badge/Feature-Interactive%20UI-brightgreen)]()
 
 ---
 
